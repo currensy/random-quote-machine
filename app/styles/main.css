@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 .browsehappy {
     margin: 0.2em 0;
@@ -12,16 +13,58 @@
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #0effdb;
 }
 
+.spacer20{
+    min-height:30px;
+    clear:both;
+}
+
+#tweet > i {
+  margin-top: 4px;
+  margin-left: 30px;
+}
+
+.get-quote {
+  background-color: rgba(251, 255, 65, 0.93);
+  border: none;
+  font-size: 15px;
+  width: 90px;
+  height: 54px;
+  box-shadow: 1px 1px 3px #888888;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 8px;
+}
+
+.get-quote:hover {
+  opacity: 0.9;
+}
+
+.quote-block {
+  visibility: hidden;
+}
 
 #quote-text {
   font-style: italic;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+
 }
 
 #quote-author {
   font-weight: lighter;
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 22px;
+
+}
+
+.jumbotron {
+  background-color: #0effdb;
+  border-radius: 0px !important;
+}
+
+.footer {
+  text-align: center;
+  font-family: 'Lato',sans-serif;
 }
