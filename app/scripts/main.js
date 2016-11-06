@@ -7,12 +7,21 @@ $(document).ready(function(){
   $("#get-random-quote").click(function(){
     var quoteIconLeft = '<i class="fa fa-quote-left" aria-hidden="true"></i> ';
     var quoteIconRight = ' <i class="fa fa-quote-right" aria-hidden="true"></i>';
-    var quoteAuthor = "";
+
+    var tweeterBtn = '<a class="twitter-share-button"'
+      +'href="https://twitter.com/intent/tweet?text=Hello%20world">'
+      +'Tweet</a>';
+
     console.log("Get quote");
     $.get(proxy+quotesApi,function(data){
       console.log(data);
       $("#quote-text").html(quoteIconLeft+ data.quoteText +quoteIconRight);
       $("#quote-author").html("- " + data.quoteAuthor);
+
+
+      $("#tweet").attr("href","https://twitter.com/intent/tweet?text="+data.quoteText+" -"+data.quoteAuthor);
+
+
 
     });
 
